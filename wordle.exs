@@ -2,6 +2,7 @@ defmodule Wordle do
 
   def random_word do
     words = ["voiceless	"	, "spoil"	, "burly", "balance", "unable", "slap", "encouraging"	, "unkempt"	, "memory"	, "clip"	, "alive"	, "rejoice"	, "history"	, "mountain"	, "floor"	, "overconfident"	, "hanging"	, "reward"	, "internal"	, "explode"	, "nonstop"	, "hover"	, "condition"	, "time"	, "obtainable"	, "front"	, "efficient"	, "absent"	, "grateful"	, "concern"	, "flawless"	, "nest"	, "phone"	, "ice"	, "tin"	, "momentous"	, "destruction"	, "chop"	, "short"	, "exciting"	, "shake"	, "fetch"	, "perpetual"	, "powerful", "grandiose"	, "guitar"	, "easy"	, "smash"	, "maid"	, "ajar"]
+
     random_word = Enum.random(words)
     random_word
   end
