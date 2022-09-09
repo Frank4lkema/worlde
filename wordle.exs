@@ -34,6 +34,16 @@ defmodule Wordle do
     end)
   end
 
+  def check_letter([letter|letters], word_list) do
+    if letter in word_list do
+      IO.puts "You guessed #{letter} correctly!"
+    end
+    check_letter(letters, word_list)
+  end
+
+  def check_letter([], word_list) do
+    nil
+  end
 
   def play do
      word = random_word()
